@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connection.cs" />
     <Compile Include="FrmEnqueryData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +62,12 @@
     </Compile>
     <Compile Include="FrmFilter.Designer.cs">
       <DependentUpon>FrmFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mahasiswa.cs" />
+    <Compile Include="MahasiswaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MahasiswaDS.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,6 +87,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="MahasiswaDS.xsc">
+      <DependentUpon>MahasiswaDS.xsd</DependentUpon>
+    </None>
+    <None Include="MahasiswaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MahasiswaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MahasiswaDS.xss">
+      <DependentUpon>MahasiswaDS.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
